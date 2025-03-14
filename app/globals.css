@@ -1,0 +1,137 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 30 30% 98%;
+    --foreground: 20 10% 30%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 20 10% 30%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 20 10% 30%;
+
+    --primary: 20 70% 30%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 20 10% 96%;
+    --secondary-foreground: 20 10% 30%;
+
+    --muted: 20 10% 96%;
+    --muted-foreground: 20 10% 60%;
+
+    --accent: 20 70% 97%;
+    --accent-foreground: 20 70% 30%;
+
+    --destructive: 0 70% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 20 20% 96%;
+    --input: 20 20% 96%;
+    --ring: 20 70% 90%;
+
+    --radius: 0.5rem;
+
+    --brown-50: 20 70% 97%;
+    --brown-100: 20 70% 94%;
+    --brown-200: 20 70% 88%;
+    --brown-300: 20 60% 80%;
+    --brown-400: 20 50% 70%;
+    --brown-500: 20 50% 50%;
+    --brown-600: 20 50% 40%;
+    --brown-700: 20 50% 30%;
+    --brown-800: 20 50% 20%;
+    --brown-900: 20 50% 10%;
+  }
+
+  .dark {
+    --background: 20 10% 10%;
+    --foreground: 20 10% 90%;
+
+    --card: 20 10% 12%;
+    --card-foreground: 20 10% 90%;
+
+    --popover: 20 10% 12%;
+    --popover-foreground: 20 10% 90%;
+
+    --primary: 20 70% 41%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 20 10% 20%;
+    --secondary-foreground: 20 10% 90%;
+
+    --muted: 20 10% 20%;
+    --muted-foreground: 20 10% 60%;
+
+    --accent: 20 70% 15%;
+    --accent-foreground: 20 70% 90%;
+
+    --destructive: 0 70% 40%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 20 10% 20%;
+    --input: 20 10% 20%;
+    --ring: 20 70% 30%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+@layer utilities {
+  .bg-brown-50 {
+    background-color: hsl(var(--brown-50));
+  }
+  .bg-brown-100 {
+    background-color: hsl(var(--brown-100));
+  }
+  .bg-brown-200 {
+    background-color: hsl(var(--brown-200));
+  }
+  .bg-brown-300 {
+    background-color: hsl(var(--brown-300));
+  }
+  .bg-brown-400 {
+    background-color: hsl(var(--brown-400));
+  }
+  .bg-brown-500 {
+    background-color: hsl(var(--brown-500));
+  }
+  .bg-brown-600 {
+    background-color: hsl(var(--brown-600));
+  }
+  .bg-brown-700 {
+    background-color: hsl(var(--brown-700));
+  }
+  .bg-brown-800 {
+    background-color: hsl(var(--brown-800));
+  }
+  .bg-brown-900 {
+    background-color: hsl(var(--brown-900));
+  }
+
+  .text-brown-500 {
+    color: hsl(var(--brown-500));
+  }
+
+  .border-brown-500 {
+    border-color: hsl(var(--brown-500));
+  }
+
+  .focus\:border-brown-500:focus {
+    border-color: hsl(var(--brown-500));
+  }
+
+  .focus\:ring-brown-50:focus {
+    --tw-ring-color: hsl(var(--brown-50));
+  }
+}
+
