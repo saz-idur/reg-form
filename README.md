@@ -35,13 +35,13 @@ pnpm install
 
 ### 3. ⚙️ Environment Configuration
 
-Copy the example environment configuration file and rename it to '.env.local':
+Copy the example environment configuration file and rename it to `.env.local`:
 
 ```bash
 cp .env.example .env.local
 ```
 
-Update the '.env.local' file with your Supabase credentials and any other necessary environment variables.
+Update the `.env.local` file with your Supabase credentials and any other necessary environment variables.
 
 Example .env.local:
 
@@ -60,7 +60,7 @@ To start the development server and see your changes in real-time:
 pnpm run dev
 ```
 
-This will launch the application in your default browser at 'http://localhost:3000'.
+This will launch the application in your default browser at `http://localhost:3000`.
 
 ## License
 
