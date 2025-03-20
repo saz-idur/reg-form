@@ -1,67 +1,69 @@
-# Ex-ISCIAN's Iftar Party - Registration Form
+## Overview
 
-This project is a registration form for the Ex-ISCIAN's Iftar Party, built using Next.js, TypeScript, Tailwind CSS, and Supabase.
+This project is a visually appealing, full-stack registration form, originally built for the Ex-ISCIAN's Iftar Party. Crafted with Next.js, TypeScript, and Tailwind CSS, it offers a clean and modern user interface. While designed for a specific event, it can be easily adapted and integrated into any registration system requiring a user-friendly front-end component. Supabase is used as the backend database, providing a complete solution for data collection and management.
 
-## 🚀 Technologies Used
+## Prerequisites
 
-- **Next.js:** React framework for building server-rendered applications.
-- **TypeScript:** Static typing for JavaScript.
-- **Tailwind CSS:** Utility-first CSS framework.
-- **Supabase:** Open-source Firebase alternative for backend services.
-- **Radix UI:** Unstyled, accessible component primitives.
-- **shadcn/ui:** Re-usable components built using Radix UI and Tailwind CSS.
-- **pnpm:** Fast, disk space efficient package manager.
+-   Node.js (>= 18)
+-   pnpm (>= 8)
+-   Supabase account
 
-## 💻 Development Setup
+## Installation
 
-Follow these steps to set up and run the project locally:
+1.  Clone the repository:
 
-### 1. 📥 Clone the Repository
+    ```bash
+    git clone [https://github.com/saz-idur/reg-form.git](https://github.com/saz-idur/reg-form.git)
+    cd reg-form
+    ```
 
-Clone the project repository to your local environment:
+2.  Install the dependencies:
 
-```bash
-git clone https://github.com/saz-idur/reg-form.git
-cd reg-form
-```
+    ```bash
+    pnpm install
+    ```
 
-### 2. 📦 Install Dependencies
+## Configuration
 
-Ensure you have all the required dependencies installed. Run:
+1.  Copy the example environment configuration file and rename it to `.env.local`:
 
-```bash
-pnpm install
-```
+    ```bash
+    cp .env.example .env.local
+    ```
 
-### 3. ⚙️ Environment Configuration
+2.  Update the `.env.local` file with your Supabase credentials:
 
-Copy the example environment configuration file and rename it to `.env.local`:
+    ```bash
+    NEXT_PUBLIC_SUPABASE_URL=your_supabase_url
+    NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
+    ```
 
-```bash
-cp .env.example .env.local
-```
+    -   `NEXT_PUBLIC_SUPABASE_URL`: The URL of your Supabase project.
+    -   `NEXT_PUBLIC_SUPABASE_ANON_KEY`: The anonymous key for your Supabase project.
 
-Update the `.env.local` file with your Supabase credentials and any other necessary environment variables.
+    **How to get Supabase keys:**
+    * Go to your supabase project dashboard.
+    * Navigate to settings -> API.
+    * Copy the URL and anon key.
 
-Example .env.local:
+## Usage
 
-```bash
-NEXT_PUBLIC_SUPABASE_URL=your_supabase_url
-NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
-```
+1.  Start the development server:
 
-**Note:** Replace your_supabase_url and your_supabase_anon_key with your actual Supabase project URL and anonymous key.
+    ```bash
+    pnpm run dev
+    ```
 
-### 4. 🚀 Run the Application
+2.  Open your browser and navigate to `http://localhost:3000`.
 
-To start the development server and see your changes in real-time:
+3.  Fill out the registration form and submit it.
 
-```bash
-pnpm run dev
-```
-
-This will launch the application in your default browser at `http://localhost:3000`.
+4.  The submitted data will be stored in your Supabase database.
 
 ## License
 
-This project is licensed under the MIT License.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Credit
+
+This project was created by [Sazidur Rahman](https://github.com/saz-idur/)
