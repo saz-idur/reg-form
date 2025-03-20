@@ -1,8 +1,8 @@
-# Modern Registration Portal
+# Modern Registration Portal: Full-Stack Sign-Up System (Next.js & Supabase)
 
 ## Overview
 
-This project is a visually appealing, full-stack registration form, originally built for the Ex-ISCIAN's Iftar Party. Crafted with Next.js, TypeScript, and Tailwind CSS, it offers a clean and modern user interface. While designed for a specific event, it can be easily adapted and integrated into any registration system requiring a user-friendly front-end component. Supabase is used as the backend database, providing a complete solution for data collection and management.
+This project is a visually appealing, full-stack registration form, initially built for the Ex-ISCIAN's Iftar Party. Crafted with Next.js, TypeScript, and Tailwind CSS, it offers a clean and modern user interface. While designed for a specific event, it can be easily adapted and integrated into any registration system requiring a user-friendly front-end component. Supabase is used as the backend database, providing a complete solution for data collection and management.
 
 ## Prerequisites
 
