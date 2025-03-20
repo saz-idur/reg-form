@@ -9,7 +9,6 @@ const inter = Inter({ subsets: ["latin"] })
 export const metadata: Metadata = {
   title: "Registration Form",
   description: "Registration form for Ex-ISCIAN's Iftar Party",
-    generator: 'v0.dev'
 }
 
 export default function RootLayout({
