@@ -21,8 +21,8 @@ Follow these steps to set up and run the project locally:
 Clone the project repository to your local environment:
 
 ```bash
-git clone https://github.com/saz-idur/irs-client.git
-cd irs-client
+git clone https://github.com/saz-idur/reg-form.git
+cd reg-form
 ```
 
 ### 2. 📦 Install Dependencies
