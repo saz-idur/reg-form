@@ -49,7 +49,7 @@ export default function RegistrationForm() {
     if (!formData.whatsappNumber.trim()) {
       newErrors.whatsappNumber = "WhatsApp number is required"
     } else if (!/^01\d{9}$/.test(formData.whatsappNumber)) {
-      newErrors.whatsappNumber = "Your WhatsApp number should be 11 digits (e.g. '01712345678')"
+      newErrors.whatsappNumber = "Your WhatsApp number should be 11 digits (e.g. '01XXXXXXXXX')"
     }
 
     if (!formData.paymentMethod) {
@@ -347,7 +347,7 @@ export default function RegistrationForm() {
               >
                 <RadioGroupItem value="bkash" id="bkash" className="text-brown-500" />
                 <Label htmlFor="bkash" className="font-medium cursor-pointer flex-1 text-gray-600">
-                  Bkash (01892747691)
+                  Bkash (+880 1XXXXXXXXX)
                 </Label>
               </motion.div>
               <motion.div
@@ -357,7 +357,7 @@ export default function RegistrationForm() {
               >
                 <RadioGroupItem value="nagad" id="nagad" className="text-brown-500" />
                 <Label htmlFor="nagad" className="font-medium cursor-pointer flex-1 text-gray-600">
-                  Nagad (01892747691)
+                  Nagad (+880 1XXXXXXXXX)
                 </Label>
               </motion.div>
               <motion.div
@@ -367,7 +367,7 @@ export default function RegistrationForm() {
               >
                 <RadioGroupItem value="rocket" id="rocket" className="text-brown-500" />
                 <Label htmlFor="rocket" className="font-medium cursor-pointer flex-1 text-gray-600">
-                  Rocket (018927476913)
+                  Rocket (+880 1XXXXXXXXX0)
                 </Label>
               </motion.div>
             </RadioGroup>
@@ -476,10 +476,9 @@ export default function RegistrationForm() {
       {/* Additional help text */}
       <motion.div variants={itemVariants} className="text-center text-sm text-gray-500 mt-8">
         <p>
-          Need help? Contact the organizer at <span className="font-medium">01892747691</span>
+          Need help? Contact the organizer at <span className="font-medium">+880 1XXXXXXXXX</span>
         </p>
       </motion.div>
     </motion.div>
   )
 }
-
